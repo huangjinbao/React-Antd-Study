@@ -52,11 +52,12 @@ import * as serviceWorker from "./serviceWorker";
    * 修改less-loader
    * 
    * 插件安装脚本：
-   * 安装react-router：yarn add react-router-dom axios less-loader
-   * 
+   * 安装react-router：yarn add react-router-dom axios less less-loader
+   * 安装less：注意需要安装less以及less-loader,并且暴露配置文件，增加less（仿照css）修改importLoaders 为 3
    * 
    * */
 }
+
 
 
 ReactDOM.render(
