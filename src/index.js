@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Life from "./pages/demo/Life";
+import Home from "./pages/route-demo/route1/home";
 import * as serviceWorker from "./serviceWorker";
 
 // eslint-disable-next-line no-lone-blocks
@@ -54,7 +54,7 @@ import * as serviceWorker from "./serviceWorker";
    * 插件安装脚本：
    * 安装react-router：yarn add react-router-dom axios less less-loader
    * 安装less：注意需要安装less以及less-loader,并且暴露配置文件，增加less（仿照css）修改importLoaders 为 3
-   * 
+   * 安装antd：yarn add antd  注意要引入css文件 import 'antd/dist/antd.css'; // or 'antd/dist/antd.less'
    * */
 }
 
@@ -62,7 +62,7 @@ import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Life />
+    <Home />
   </React.StrictMode>,
   document.getElementById("root")
 );

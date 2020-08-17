@@ -1,7 +1,8 @@
 import React from "react";
 import Child from "./Child";
+import {Button} from "antd";
 import './index.less';
-
+// import 'antd/dist/antd.css'
 export default class Life extends React.Component {
   //等价下面的
   //   constructor(prop) {
@@ -50,8 +51,8 @@ export default class Life extends React.Component {
     return (
       <div className="content">
         <p>React 生命周期介绍</p>
-        <button onClick={this.handleAdd}>点击一下</button>
-        <button onClick={this.handleClick.bind(this)}>点击一下</button>
+        <Button onClick={this.handleAdd}>点击一下</Button>
+        <Button onClick={this.handleClick.bind(this)}>点击一下</Button>
         <p>{this.state.count}</p>
         <Child name={this.state.count}></Child>
       </div>

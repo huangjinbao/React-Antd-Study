@@ -1,0 +1,21 @@
+@import './../resource/default.less';
+
+.container {
+    display: flex;
+
+    .nav-left {
+        background-color: @colorR;
+        width: 15%;
+        min-width: 180px;
+        height: calc(100vh);
+    }
+
+    .main {
+        background-color: @colorL;
+        .content{
+            position: relative;
+            padding: 20px;
+        }
+    }
+
+}
