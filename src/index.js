@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
-import Home from "./pages/route-demo/route1/home";
+import Router from "./router";
 import * as serviceWorker from "./serviceWorker";
 
 // eslint-disable-next-line no-lone-blocks
@@ -62,7 +62,7 @@ import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Home />
+    <Router />
   </React.StrictMode>,
   document.getElementById("root")
 );
